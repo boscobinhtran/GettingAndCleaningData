@@ -22,14 +22,15 @@ Parameters for the project
 > 4. Appropriately labels the data set with descriptive activity names.
 > 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-analysis.R
+R Script run_analysis.R
 --------------------------
 # Run the R script analysis.R in either following ways:
-	* Open the script file in a text editor, and paste the code in the console
-	* load the script
-		```{r }
-		source('./run_analysis.R')
-		```
+> Open the script file in a text editor, and paste the code in the console
+> load the script
+>		```{r }
+>		source('./run_analysis.R')
+>		```
+
 # How the script works
 ## Preliminaries
 Load packages
