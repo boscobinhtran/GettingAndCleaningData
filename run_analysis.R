@@ -79,4 +79,4 @@ reshape$feature <- gsub("-mean\\(\\)|-std\\(\\)", "",reshape$feature)
 
 setkey(reshape, subject, activity, feature, measure)
 tidy <- reshape[, list(count = .N, average = mean(value)), by=key(reshape)]
-write.csv(tidy, file = "tidydata.txt", quote=FALSE, row.names=FALSE)
+write.table(tidy, file = "tidydata.txt", quote=FALSE, row.names=FALSE)
